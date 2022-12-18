@@ -1,12 +1,12 @@
 class Helicopter:
     speed = 0
     started = False
-    def __init__(self,manufacturer,year,name,price):
-        self.year = year
-        self.name = name
-        self.price = price
+    def __init__(self,manufacturer, name, year, price):
         self.manufacturer = manufacturer
-    
+        self.name = name
+        self.year = year
+        self.price = price
+
     def start(self):
         self.started = True
         print("Helicopter started, let's fly!")

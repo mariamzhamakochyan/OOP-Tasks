@@ -4,7 +4,7 @@ class MyDogs:
         self.dogs = dogs
 
     def count(self):
-        print(f"I have {len(dogs.dogs)} dogs.")
+        print(f"I have {len(d.dogs)} dogs.")
         
     def eat(self):
         hungry = False
@@ -64,6 +64,6 @@ my_dogs = [
     Dog("Max", 9),
     Doberman("Rocky", 7)
 ]
-dogs = MyDogs(my_dogs)
-dogs.count()
-dogs.eat()
+d = MyDogs(my_dogs)
+d.count()
+d.eat()

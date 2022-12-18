@@ -9,18 +9,18 @@ class Helicopter:
 
     def start(self):
         self.started = True
-        print("Helicopter started, let's fly!")
+        print("Helicopter started, we are flying!")
 
-    def increase_speed(self, delta):
+    def increase_speed(self, speed_):
         if self.started:
-            self.speed = self.speed + delta
+            self.speed = self.speed + speed_
             print('swish/swash/swish/swash.')
         else:
             print("You need to start the Helicopter first")
 
     def stop(self):
         self.speed = 0
-        print('Halting')
+        print('Take off')
     
     def showDescription(self):
         print(f"Manufacturer: {self.manufacturer} \nHelicopter name: {self.name} \nIntroduction:  {self.year} \nPrice: {self.price}")
@@ -31,3 +31,4 @@ h.showDescription()
 h.increase_speed(10)
 h.start()
 h.increase_speed(40)
+h.stop()

@@ -1,10 +1,10 @@
-class Pets:
+class MyDogs:
     dogs = []
     def __init__(self, dogs):
         self.dogs = dogs
 
     def count(self):
-        print(f"I have {len(my_pets.dogs)} dogs.")
+        print(f"I have {len(dogs.dogs)} dogs.")
         
     def eat(self):
         hungry = False
@@ -64,6 +64,6 @@ my_dogs = [
     Dog("Max", 9),
     Doberman("Rocky", 7)
 ]
-my_pets = Pets(my_dogs)
-my_pets.count()
-my_pets.eat()
+dogs = MyDogs(my_dogs)
+dogs.count()
+dogs.eat()

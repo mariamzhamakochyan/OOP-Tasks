@@ -38,4 +38,4 @@ A.deposite(150000, "Brain")
 A.GetBalance("Brain")
 A.show()
         
-            
+           

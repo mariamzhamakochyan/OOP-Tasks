@@ -37,5 +37,3 @@ A = Account("Maria", 100000, "Brain")
 A.deposite(150000, "Brain")
 A.GetBalance("Brain")
 A.show()
-        
-           

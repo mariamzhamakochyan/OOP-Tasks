@@ -58,7 +58,6 @@ class TV():
 tv = TV()
 tv.power()
 tv.show()
-
 tv.channelUp()
 tv.channelUp()
 tv.volumeUp()
@@ -73,4 +72,3 @@ tv.volumeDown()
 tv.mute()
 tv.show()
 tv.setChannel(11)
-        

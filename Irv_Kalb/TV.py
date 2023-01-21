@@ -50,7 +50,7 @@ class TV():
             print('     Tv is: On')
             print(f'        Channel is: {self.ChannelList[self.ChanIndex]}')
             if self.IsMuted:
-                print(f'    Volume is: {self.volume} (sound is muted)')
+                print(f'        Volume is: {self.volume} (sound is muted)')
             else:
                 print(f'        Volume is: {self.volume}')
         else:

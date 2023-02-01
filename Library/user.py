@@ -1,14 +1,18 @@
+from books import Library
 from collections import defaultdict
+
 class User:
     def __init__(self):
+        super().__init__()
         self.user = {}
         
     def add_user(self, name):
         self.user[name] = defaultdict(list)
         
     def add_book(self, name, author, title):
-        if author in librsr:
-            if title in libvali mej uremn:
+        n = Library()
+        if author in Library.self.books:
+            if title in Library.self.books.values():
                 aut = self.user[name]
                 title_list = aut[author]
                 title_list.append(title)

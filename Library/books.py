@@ -1,10 +1,13 @@
 class Library:
     def __init__(self):
         self.books = {}
+        
     def add_author(self, author):
         self.books[author] = []
+        
     def bookname(self, author, title):
         self.books[author].append(title)
+        
     def show(self):
         return self.books
 

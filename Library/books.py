@@ -1,20 +1,23 @@
-class Library:
+class User:
     def __init__(self):
-        global
-        self.books = {}
+        self.user = {}
         
-    def add_author(self, author):
-        self.books[author] = []
-
-    def bookname(self, author, title):
-        self.books[author].append(title)
-     
+    def add_user(self, name):
+        self.user[name] = defaultdict(list)
+        
+    def add_book(self, name, author, title):
+        aut = self.user[name]
+        title_list = aut[author]
+        title_list.append(title)
+            
     def show(self):
-        return self.books
+        return self.user
 
-l = Library()
-l.add_author("Dazai Osamu")
-l.bookname("Dazai Osamu", "No longer human")
-l.bookname("Dazai Osamu", "The setting sun")
-l.bookname("Dazai Osamu", "Self-Portraits")
-print(l.show())
+u = User()
+u.add_user("Chūya Nakahara")
+u.add_book('Chūya Nakahara', 'Dazai Osamu', "No longer human")
+u.add_book('Chūya Nakahara', 'Dazai Osamu', "Self-Portraits")
+u.add_user("Akutagawa")
+u.add_book('Akutagawa', 'Charles Dickens', "Great Expectations")
+u.add_book('Akutagawa', 'Charles Dickens', "Hard Times")
+print(u.show())

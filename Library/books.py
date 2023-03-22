@@ -1,20 +1,14 @@
-class Library:
-    def __init__(self):
-        self.books = {}
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        self.borrower = None
 
-        
-    def add_author(self, author):
-        self.books[author] = []
+    def borrow(self, user):
+        self.borrower = user
 
-    def bookname(self, author, title):
-        self.books[author].append(title)
-     
-    def show(self):
-        return self.books
+    def is_available(self):
+        return self.borrower is None
 
-l = Library()
-l.add_author("Dazai Osamu")
-l.bookname("Dazai Osamu", "No longer human")
-l.bookname("Dazai Osamu", "The setting sun")
-l.bookname("Dazai Osamu", "Self-Portraits")
-print(l.show())
+    def get_info(self):
+        return f"Title: {self.title}\nAuthor: {self.author}\nBorrower: {self.borrower}"
